@@ -23,7 +23,7 @@ Direct URL: https://example.com/wp-admin/admin.php?page=wc-settings&tab=woocomme
 6. If the contact does not exist, a new contact record is created in CiviCRM and the contribution is created against the newly created contact record.
 7. Related contact record link is added to the Woocommerce order as notes.
 8. Option to sync CiviCRM and Woocommerce address, billing phone, and billing email. If a user edits his/hers address, billing phone, or billing email through the Woocommerce Account >> Edit Address page, CiviCRM profile, or through CiviCRM's backoffice, the data will be updated in both CiviCRM and Woocommerce.
-9. Option to replace Woocommerce's States/Counties list with CiviCRM's State/Province list. (**WARNING!!!** Enabling this option in an exiting Woocommerce instance will cause **State/County data loss** for **exiting Customers** and **Woocommerce settings** that relay on those.)
+9. Option to replace Woocommerce's States/Counties list with CiviCRM's State/Province list. (**WARNING!!!** Enabling this option in an existing Woocommerce instance will cause **State/County data loss** for **existing Customers** and **Woocommerce settings** that rely on those.)
 10. Basic Membership implementation: select the Membership type in CiviCRM Settings panel in the Product screen, if set, a membership will be created at checkout.
 
 ## Developers
@@ -42,3 +42,6 @@ There are a few hooks available
 * `woocommerce_civicrm_civi_phone_updated` action
 * `woocommerce_civicrm_wc_email_updated` action
 * `woocommerce_civicrm_civi_email_updated` action
+
+
+## TODO's
